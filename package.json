@@ -11,7 +11,7 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
-    "url": "https://github.com/eteplus/typeof",
+    "url": "https://github.com/yhc-steven/npmPub",
     "type": "git"
   },
   "author": {
