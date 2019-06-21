@@ -1,62 +1,16 @@
 {
-  "name": "tumb",
-  "version": "0.1.5",
-  "description": "The typeOf method returns a string indicating the type of the value",
-  "main": "dist/typeof.js",
+  "name": "bin-tumb",
+  "version": "0.0.1",
+  "description": "bin-tumb-demo",
+  "main": "./bin/index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.config.js --mode=production",
-    "lint": "eslint .",
-    "test": "npm run lint && nyc ava",
-    "test:watch": "ava --watch",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "node bin help"
   },
-  "repository": {
-    "url": "https://github.com/yhc-steven/npmPub",
-    "type": "git"
-  },
-  "author": {
-    "name": "tumb",
-    "email": "435084418@qq.com"
-  },
-  "keywords": [
-    "node",
-    "javascript",
-    "typeof"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "ava": "^0.25.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "coveralls": "^3.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-friendly-formatter": "^4.0.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "nyc": "^11.6.0",
-    "uglifyjs-webpack-plugin": "^1.2.4",
-    "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
-  },
-  "ava": {
-    "files": [
-      "test/test.js"
-    ],
-    "verbose": true,
-    "babel": "inherit",
-    "require": [
-      "babel-core/register"
-    ]
-  },
-  "nyc": {
-    "exclude": [
-      "test/*.js"
-    ]
-  }
+  "bin": "./bin/index.js",
+  "keywords": ["spawnSync"],
+  "author": "tumb",
+  "license": "ISC",
+  "files": [
+    "bin/"
+  ]
 }
