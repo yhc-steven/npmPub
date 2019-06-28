@@ -1,16 +1,26 @@
 {
-  "name": "bin-tumb",
+  "name": "lib-tumb",
   "version": "0.0.1",
-  "description": "bin-tumb-demo",
-  "main": "./bin/index.js",
+  "description": "A NodeJS package for shangde",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "node bin help"
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "./bin/index.js",
-  "keywords": ["spawnSync"],
+  "bin": "./lib/index.js",
+  "keywords": [
+    "spawnSync"
+  ],
   "author": "tumb",
-  "license": "ISC",
+  "license": "TIM",
   "files": [
     "bin/"
-  ]
+  ],
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
 }
