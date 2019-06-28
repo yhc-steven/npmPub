@@ -17,6 +17,7 @@ getHtml().then(files=>{
         var rgx = /http(s?)\:\/\/ggtf\.sunland\.org\.cn\/statistics\/interactive\.js/g;
         vtrHtml = vtrHtml.replace(rgx,'');
         fs.writeFileSync('./index.html',vtrHtml,'utf8');
-        
+        console.log(process.argv);
+         
     });
 })
