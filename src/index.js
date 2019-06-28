@@ -24,6 +24,6 @@ getHtml().then(files=>{
             vtrHtml = vtrHtml.replace(rgx,'https://img.sunlands.wang/wtm.js');
             vtrHtml = vtrHtml.replace(regs,'https://res.wx.qq.com/open/js/jweixin-1.3.2.js');
         }
-        fs.writeFileSync('./index.html',vtrHtml,'utf8');
+        fs.writeFileSync('./home.html',vtrHtml,'utf8');
     });
 })
